@@ -1,0 +1,312 @@
+@charset "UTF-8";
+img {
+  height: 100px;
+  width: 100px; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 2.7em; }
+
+h3 {
+  font-size: 2em; }
+
+p {
+  font-size: 1.25em; }
+
+ul {
+  list-style: none; }
+
+li {
+  font-size: 1.25em; }
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid blueviolet;
+  box-shadow: 2px 2px 10px;
+  color: white;
+  background-color: darkred; }
+
+button:hover {
+  background-color: #5c0a0a; }
+
+.navbar-expand-lg {
+  background-color: darkred !important; }
+
+.nav-item {
+  padding: 5px 12px !important; }
+
+.navbar-expand-lg :hover {
+  color: cyan; }
+
+.navbar-nav :hover {
+  color: cyan; }
+
+.contenedor {
+  max-width: 1400px;
+  margin: auto; }
+
+header {
+  background-color: white; }
+  header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: darkred;
+    font-size: 1.6em; }
+  header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; }
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; }
+
+header a:hover {
+  color: darkred; }
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: url("../img/barberia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #hero h1 {
+    color: darkred; }
+  #hero .contenedor {
+    text-align: row;
+    padding: 200px 12px; }
+
+#somos-barber .contenedor {
+  text-align: row;
+  padding: 200px 12px; }
+
+#lo-que-aprenderas {
+  background-color: #1e1e1e;
+  color: white; }
+  #lo-que-aprenderas .contenedor {
+    text-align: center;
+    padding: 150px 12px; }
+  #lo-que-aprenderas h2 {
+    margin-top: 0;
+    font-size: 3.2em; }
+  #lo-que-aprenderas p {
+    display: none; }
+  #lo-que-aprenderas .carta {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px; }
+
+.carta:first-child {
+  background-image: url(../img/corte-masculino.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+.carta:nth-child(2) {
+  background-image: url(../img/diseño-color.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+.carta:nth-child(3) {
+  background-image: url(../img/corte-femenino.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+#caracteristicas .contenedor {
+  text-align: center; }
+
+#caracteristicas li {
+  margin: 16px 0px;
+  font-weight: bold; }
+
+#final input {
+  font-size: 1.10em;
+  color: darkred; }
+
+#final h2 {
+  font-size: 3em;
+  color: darkred; }
+
+#final h3 {
+  color: darkred; }
+
+#final label {
+  color: darkred; }
+
+footer {
+  background-color: #e6e6e6; }
+  footer p {
+    margin: 0;
+    padding: 12px;
+    color: #646464; }
+  footer .contenedor {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+
+@media (min-width) {
+  header .contenedor {
+    flex-direction: row;
+    justify-content: space-between; } }
+
+header nav {
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-right: 20px; }
+
+#somos-barber .contenedor {
+  display: flex;
+  justify-content: center; }
+
+#somos-barber .texto {
+  width: 50%;
+  max-width: 600px;
+  text-align: initial;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#somos-barber h2 {
+  background-color: black;
+  color: darkred; }
+
+#somos-barber p {
+  background-color: black;
+  color: darkred; }
+
+#somos-barber .img-contenedor {
+  background-size: cover;
+  background-image: url(../img/academia-barber.jpg);
+  background-position: center center;
+  height: 500px;
+  width: 400px; }
+
+#lo-que-aprenderas .contenedor {
+  display: flex;
+  justify-content: center;
+  width: 50%; }
+
+#lo-que-aprenderas p {
+  display: block;
+  color: darkred; }
+
+#lo-que-aprenderas h2 {
+  color: darkred; }
+
+#lo-que-aprenderas h3 {
+  color: darkred; }
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+  background-color: #24303c; }
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2; }
+  .tall {
+    grid-row: span 2; } }
+
+#caracteristicas .contenedor {
+  text-align: initial; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px blueviolet; }
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.controls {
+  width: 100%;
+  background: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid darkred;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white; }
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px; }
+
+.form-register a {
+  color: white;
+  text-decoration: none; }
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline; }
+
+.form-register .botons {
+  width: 100%;
+  background: darkred;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px; }
+
+footer {
+  background-color: darkgrey; }
